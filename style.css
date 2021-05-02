@@ -75,6 +75,7 @@ body {
 
 #main input:hover,
 #main input:focus,
+/* check if input is not empty */
 #main input:not(:placeholder-shown) {
   width: 300px;
 }
