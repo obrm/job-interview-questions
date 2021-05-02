@@ -1,0 +1,132 @@
+/*
+HOW TO SUBMIT:
+1. Create a github.com account if you don't have one
+2. Complete the assignment in your code editor
+3. Go to http:gist.github.com/
+4. Add description and name of the assignment
+5. Paste your solution to the editor
+6. Click on the green "Create secret gist" button
+7. Copy the URL
+8. Send it to ilya@500tech.com, CC maayan@500tech.com
+9. You can edit the code after submitting if you want to make last-minute changes
+10. If you will change the code after 14:00, your solution won't be reviewed
+
+WHAT WE WILL REVIEW:
+1. Solutions should work
+2. Code readability
+3. Clean code
+
+README:
+1. You can use any documentation or materials as a reference
+2. Each assignment should be sent a separate gist
+3. When solving a bonus, edit an existing assignment instead of creating a new one
+
+--------------------------------------------------------------------------------------------------------------------
+Assignment 1
+--------------------------------------------------------------------------------------------------------------------
+Map is a data structure that holds key-value pairs where both keys and values can be of any type.
+Implement a simplified Map (let's call it SimpleMap) with the following methods:
+
+1. Simple Map.set(key, value);
+  For simplicity keys will only be strings
+2. SimpleMap.get(key);
+  Should return `null` if such key doesn't exist
+3. SimpleMap.has(key);
+  Should return a boolean state of whether SimpleMap has this key stored or not
+4. SimpleMap.delete(key);
+  Should delete a specific item from SimpleMap
+5. SimpleMap.clear();
+  Should delete all items from SimpleMap
+
+Bonus: add the following methods to your implementation
+  6. SimpleMap.size;
+    Returns the amount of items currently stored in SimpleMap. Note that that there are no parentheses.
+  7. SimpleMap.keys();
+    Returns an array of all keys
+  8. SimpleMap.values();
+    Returns an array of all values
+  9. SimpleMap.entries();
+    Returns an array of key-value tuples: [[key, value], [key, value]]
+  10. SimpleMap.forEach((key, value) => callback(key, value));
+
+Obviously you cannot use the built-in Map.
+
+You can use this documentation article as a reference:
+https:developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+
+--------------------------------------------------------------------------------------------------------------------
+Assignment 2
+--------------------------------------------------------------------------------------------------------------------
+Implement an inventory lookup function for a car dealership.
+
+Given a list of cars ordered by brands, each brand having models from different years,
+implement a `findCarsByYear` function that will log to console all models from the inventory
+with matching year.
+
+Example:
+  findCarsByYear(2013);
+
+Console output for the example:
+  Škoda Fabia 2013
+  Toyota Corolla 2013
+
+const INVENTORY = [{
+  brand: 'Škoda',
+  models: [{
+    name: 'Fabia',
+    years: [2011, 2012, 2013]
+  }, {
+    name: 'Kamiq',
+    years: [2019, 2020, 2021]
+  }]
+}, {
+  brand: 'Toyota',
+  models: [{
+    name: 'Corolla',
+    years: [2011, 2013]
+  }, {
+    name: 'Prius',
+    years: [2019, 2020, 2021]
+  }]
+}, {
+  brand: 'Nissan',
+  models: [{
+    name: 'Micra',
+    years: [2011]
+  }, {
+    name: 'GTR',
+    years: [2019]
+  }]
+}]
+
+Bonus: implement a `findCars` function that could accept year, model name, or manufacturer name.
+  Example:
+    findCars('GTR');
+
+  Console output for the example:
+    Nissan GTR 2019
+
+--------------------------------------------------------------------------------------------------------------------
+Assignment 3
+--------------------------------------------------------------------------------------------------------------------
+Implement auto-expandable input using CSS that has width of 300px when hovered, focused, or has a value, and 80px otherwise.
+
+Bonus: implement the same input using JS without CSS
+
+--------------------------------------------------------------------------------------------------------------------
+Assignment 4
+--------------------------------------------------------------------------------------------------------------------
+Implement a debugging code snippet that can be injected to any page by passing the code in the browser console which will show all ancestors of a currently hovered element.
+
+1. The widget should be fixed to the bottom left of the page
+2. The content of the widget should show the hierarchy of the currently hovered element
+3. The hierarchy should look like this: "html > body > div > div > div > ul > li"
+
+Hints
+  1. Use console.dir to see attributes of a DOM node
+  2. Use `.localName` property of a DOM node to get the tag name
+
+Bonus:
+  1. Apply nicer styling to the widget (add background color, padding, and gradual coloring for each child using `hsl`)
+  2. Add classes and ids to the widget (body.my-class > div#root > div.btn.btn-small)
+*/

@@ -1,0 +1,80 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+/* Container */
+.container {
+  max-width: 758px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #333;
+  border: solid 1px #333;
+}
+
+/* Navbar */
+#navbar {
+  background: #333;
+  color: #fff;
+  overflow: auto;
+}
+
+#navbar .logo {
+  padding: 20px 0;
+  text-align: center;
+}
+
+#main {
+  margin: 50px 0;
+}
+
+#main .form-group {
+  margin-bottom: 20px;
+}
+
+#main label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#main input {
+  padding: 10px;
+  border: 1px #ddd solid;
+  transition: all 1s ease-in-out;
+  width: 80px;
+}
+
+#main input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+#main input:hover,
+#main input:focus,
+#main input:not(:placeholder-shown) {
+  width: 300px;
+}
