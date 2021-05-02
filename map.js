@@ -43,56 +43,82 @@ class SimpleMap {
   hasValue(value) {
     // loop over this map
     for (const key in this._map) {
+      // check if the given value is equal to this key's value
       if (this._map[key] === value) {
+        // return true
         return true
       }
     }
+    // return false if there is no match
     return false
   }
 
   get(key) {
+    // if this map has the given key, return the given key's value
+    // else return null
     return this.has(key) ? this._map[key] : null
   }
 
   clear() {
+    // set size to 0
     this.size = 0
+    // set this map to an empty object
     this._map = {}
   }
 
   keys() {
+    // create keys array
     const keys = []
-    for (const keys in this._map) {
+    // loop over this map
+    for (const key in this._map) {
+      // check if this key is in this map
       if (this._map.hasOwnProperty(key)) {
+        // push current key into the keys array
         keys.push(key)
       }
     }
+    // return keys array
     return keys
   }
 
   values() {
+    // create values array
     const values = []
+    // loop over this map
     for (const key in this._map) {
+      // push current value to values array
       values.push(this._map[key])
     }
+    // return values array
     return values
   }
 
   size() {
+    // return _size variable of this map
     return this._size
   }
 
   entries() {
+    // create entries array
     const entries = []
+    // loop over this map
     for (const key in this._map) {
+      // push current key, value pair as an array [key, value] to entries array
       entries.push([key, this._map[key]])
     }
+    // return entries array
     return entries
   }
 
   myForeEach(callback) {
+    // create entries array
     const entries = this.entries()
-    var i = 0
+
+    // create i constant set to zero
+    const i = 0
+    // loop over entries array
     for (let j = 0; j < entries.length; j++) {
+      // in each iteration execute given callback with both key and value
       callback(entries[j][i], entries[j][i + 1])
     }
   }
