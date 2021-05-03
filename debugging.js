@@ -60,7 +60,7 @@ function getParents(el) {
   document.querySelector('.all-parents').innerHTML = pTag
 }
 
-// set all as an HTMLCollection of all of the document's tags
+// set "all" as an HTMLCollection of all of the document's tags
 const all = document.getElementsByTagName('*')
 
 // loop through all elements in the document
