@@ -114,8 +114,8 @@ function findCarsByYear(year) {
     models.push([item.brand, item.models])
   }
 
-  // initialize i as 1
-  let i = 1
+  // set i as 1
+  const i = 1
   // initialize j as 0
   let j = 0
 
