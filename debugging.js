@@ -26,7 +26,7 @@ document.body.innerHTML += markup
 
 // getParents function
 function getParents(el) {
-  // set parentSelector as document
+  // set parentSelector constant to be the document
   const parentSelector = document
 
   // initialize parents array
