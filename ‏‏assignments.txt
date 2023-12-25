@@ -7,9 +7,8 @@ HOW TO SUBMIT:
 5. Paste your solution to the editor
 6. Click on the green "Create secret gist" button
 7. Copy the URL
-8. Send it to ilya@500tech.com, CC maayan@500tech.com
-9. You can edit the code after submitting if you want to make last-minute changes
-10. If you will change the code after 14:00, your solution won't be reviewed
+8. You can edit the code after submitting if you want to make last-minute changes
+9. If you will change the code after 14:00, your solution won't be reviewed
 
 WHAT WE WILL REVIEW:
 1. Solutions should work
